@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Method</title>
+    <style>
+    #target-parent {      
+        /* Vertical Centering */
+        display:            table-cell;
+        vertical-align:     middle;
+        
+        height: 10em;
+        width:  20em;
+        
+        background: #83BA00;
+
+    }
+    
+    #target {
+        /* Horizontal Centering */
+        /* margin: auto; */
+        
+        height: 5em;
+        width:  10em;
+        
+        background: #f55500;
+        
+    }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Table Method</h1>
+    <p>
+        This method utilizes display: table-cell; to make vertical centering easy. See <a href=  "http://www.quirksmode.org/css/display.html">http://www.quirksmode.org/css/display.html</a> for supported browsers (IE6 & IE7 do not support this method).
+        
+    </p>
+    
+    <p>
+        Combining this technique with the basic horizontal centering method will center both vertically and horizontally.
+    
+    </p>
+
+    <div    id= "target-parent">
+        <div    id= "target"></div>
+        
+    </div>
+
+</body>
+
+</html>

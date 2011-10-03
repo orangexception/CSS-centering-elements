@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vertically Center a Fixed Height Block Element</title>
+    <style>
+    #target {        
+        position:   absolute;
+        top:        50%;
+        
+        margin:         auto;
+        margin-top:     -5em;   /* height / 2 = 10em / 2 = 5em */
+        
+        height: 10em;
+        width:  20em;
+        
+        background: #f55500;
+        
+    }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Vertically Center a Fixed Height Block Element</h1>
+    <p>
+        A fixed height block element can be vertically centered by using absolute positioning. Set top to 50% to find the middle of the space.
+    
+    </p>
+    <p>
+        Since elements are positioned from the top, left corner we need to offset our reference. You can do this by using negative margins equal to half of the height.
+        
+    </p>
+
+    <div    id= "target"></div>
+
+</body>
+
+</html>

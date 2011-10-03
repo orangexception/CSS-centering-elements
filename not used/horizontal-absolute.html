@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horizontally Center an Absolutely Positioned Block Element</title>
+    <style>
+    #target {        
+        position:   absolute;
+        left:       50%;
+        
+        margin:         auto;
+        margin-left:    -10em;   /* width / 2 = 20em / 2 = 10em */
+        
+        height: 10em;
+        width:  20em;
+        
+        background: #f55500;
+        
+    }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Horizontally Center an Absolutely Positioned Block Element</h1>
+    <p>
+        An absolutely positioned block element uses margins similar to the auto method. You set left to 50% to find the middle of our space.
+    
+    </p>
+    
+    <p>
+        Since elements are positioned from the top, left corner we need to offset our reference. You can do this by using negative margins equal to half of the width.
+        
+    </p>
+
+    <div    id= "target"></div>
+
+</body>
+
+</html>

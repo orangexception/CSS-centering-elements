@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horizontally and Vertically Center an Absolute Variable Block Element</title>
+    <style>
+    #target {        
+        position:   absolute;
+        top:        50%;
+        left:       50%;
+        
+        margin: auto;
+        
+    }
+    
+    </style>
+    
+    <script src=    "http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script>
+    $( document ).ready( start );
+    function start() {
+        $( "#target" ).load( centerTarget );
+        
+    }
+    
+    function centerTarget() {
+        var iWidth=    $( "#target" ).width();
+        $( "#target" ).css( "margin-left" , iWidth / 2 * -1 );
+        
+        var iHeight=    $( "#target" ).height();
+        $( "#target" ).css( "margin-top" , iHeight / 2 * -1 );
+    }
+    
+    </script>
+
+</head>
+<body>
+    <h1>Horizontally and Vertically Center an Absolute Variable Block Element</h1>
+    <p>
+        Set top and left to 50% to find the middle of the space.
+    
+    </p>
+    <p>
+        Since elements are positioned from the top, left corner we need to offset our reference. You can do this by using negative margins equal to half of the height and width.
+        
+    </p>
+    
+    <p>
+        However, in a variable height and width block, we do not know the height and width. We must rely on JavaScript to tell us the height and width of the block. 
+        
+    </p>    
+
+    <img    src=    "http://hollow-night-558.herokuapp.com/assets/six-sliced.png"
+            id= "target" />
+
+</body>
+
+</html>
