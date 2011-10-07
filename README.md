@@ -3,8 +3,9 @@
 ## Author
 Bradley Moore
 
-orangexception.com
-@orangexception on Twitter
+[http://orangexception.com](orangexception.com)
+
+[http://twitter.com/orangexception](@orangexception on Twitter)
 
 ## Description
 Example code from blog post. Demonstrates how to center block elements.
